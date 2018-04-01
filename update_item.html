@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block nav %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<form action="" method="POST">
+    {{ form.newPriority.label }}{{ form.newPriority() }}{{ form.update() }}
+</form>
+{% endblock %}
